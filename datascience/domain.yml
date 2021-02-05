@@ -2,12 +2,18 @@ version: "2.0"
 
 intents:
   - greet
+  - skills
   - goodbye
   - affirm
   - deny
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - motivation
+  - start
+  - eigenschaften
+  - fragen
+  - cv
 
 responses:
   utter_greet:
@@ -29,10 +35,78 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
   
-  utter_skills:
-  - text: "Experience with "Basic" since I was ten (C64)"
+#  utter_skills:
+#  - text: "Experience with Basic since I was ten (C64) \n Learned Turbo Pascal in school (and wrote a backgammon computer but only based on imperative programming)"
+
+  utter_skills1:
+  - text: "Experience with Basic since I was ten (C64)"
+
+  utter_skills2:
   - text: "Learned Turbo Pascal in school (and wrote a backgammon computer but only based on imperative programming)"
 
+  utter_skills3:
+  - text: "Studied computer science and started with Java in 1995"
+
+  utter_skills4:
+  - text: "7 years professional programming experience in consulting projects (CSC)"
+
+  utter_skills5:
+  - text: "Professionel experience in Java, HTML, JSP, JavaScript, Oracle SQL, mySQL, MS SQL, Visual Basic"
+
+  utter_skills6:
+  - text: "Python since October 2020 during lecture -Datenzentrierte Informatik- by Prof. Dr. Bauckhage"
+
+  utter_skills7:
+  - text: "Used mathplotlib, numpy, pandas, scikit-learn but only with small datasets, not yet with any kind of big datasets"
+
+  utter_fragen:
+  - text: "What would be helpful to learn before I arrive to the hub"
+
+  utter_motivation:
+  - text: "I love to work hands on with the console and complex IT challenges since I was 10. I am really missing this and want to do it again. Especially machine learning is a really interesting field and still a lot research to do"
+
+  utter_start:
+  - text: "Not easy to answer. The good thing is that my PV Torsten Blum and my Tribe Lead Marijke Kist-Koolen know that I want to go for data scientist and support this. I would talk to them and come back to you."
+
+  utter_cv1:
+  - text: "1995 - 2001: Master computer science University of Bonn"
+  
+  utter_cv2:
+  - text: "2001 - 2008: Computer Science Corporation (CSC) - Java Backend and JSP/JavaScript/Applet Front End developer"  
+  
+  utter_cv3:
+  - text: "2008 - 2010: Platinion - IT Consultant"  
+  
+  utter_cv4:
+  - text: "2010 - now : Deutsche Telekom - Different Topics like WITA, Diagnostics and IDM"  
+  
+  utter_cv5:
+  - text: "2020 - now : Lecture -Datenzentrierte Informatik-"  
+  
+  utter_eigenschaften:
+  - text: "1. open to any change      2. positive        3. strong willingness to create real value "    
+
+stories:
+
+- story: skills
+  steps:
+  - intent: skills
+  - action: utter_skills1
+  - action: utter_skills2
+  - action: utter_skills3
+  - action: utter_skills4
+  - action: utter_skills5
+  - action: utter_skills6
+  - action: utter_skills7
+  
+- story: cv
+  steps:
+  - intent: cv
+  - action: utter_cv1
+  - action: utter_cv2
+  - action: utter_cv3
+  - action: utter_cv4
+  - action: utter_cv5
 
 session_config:
   session_expiration_time: 60
