@@ -2,6 +2,26 @@ version: "2.0"
 
 stories:
 
+- story: skills
+  steps:
+  - intent: skills
+  - action: utter_skills1
+  - action: utter_skills2
+  - action: utter_skills3
+  - action: utter_skills4
+  - action: utter_skills5
+  - action: utter_skills6
+  - action: utter_skills7
+  
+- story: cv
+  steps:
+  - intent: cv
+  - action: utter_cv1
+  - action: utter_cv2
+  - action: utter_cv3
+  - action: utter_cv4
+  - action: utter_cv5
+  
 - story: happy path
   steps:
   - intent: greet

@@ -1,6 +1,37 @@
 version: "2.0"
 
 nlu:
+- intent: skills
+  examples: |
+    - technical
+    - experience
+    
+- intent: eigenschaften
+  examples: |
+    - character
+    - eigenschaften
+
+- intent: fragen
+  examples: |
+    - fragen
+    - questions
+    
+- intent: motivation
+  examples: |
+    - motivation
+    - why
+ 
+- intent: start
+  examples: |
+    - when
+    - start
+    
+- intent: cv
+  examples: |
+    - cv
+    - lebenslauf
+    
+   
 - intent: greet
   examples: |
     - hey
