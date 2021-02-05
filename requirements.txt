@@ -4,6 +4,8 @@
 #
 #    pip-compile
 #
+multidict=5
+gast=0.3.3
 cycler==0.10.0            # via matplotlib
 kiwisolver==1.2.0         # via matplotlib
 matplotlib==3.2.1
