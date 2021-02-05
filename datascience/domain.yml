@@ -28,6 +28,11 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  
+  utter_skills:
+  - text: "Experience with "Basic" since I was ten (C64)"
+  - text: "Learned Turbo Pascal in school (and wrote a backgammon computer but only based on imperative programming)"
+
 
 session_config:
   session_expiration_time: 60
