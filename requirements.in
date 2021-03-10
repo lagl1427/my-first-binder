@@ -2,5 +2,6 @@ numpy
 matplotlib==3.*
 seaborn==0.10.1
 pandas
+nltk
 rasa==1.8.3
 gensim
